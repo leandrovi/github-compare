@@ -6,13 +6,14 @@ Aplicação desenvolvida com **React.js**, utilizando styled-components, prop-ty
 
 (Em construção)
 
-- React.js
+- [React.js]()
 
 ## Tools
 
 (Em construção)
 
--
+- [Styled-components]()
+- [Styled Components VS Code Extension]()
 
 ## Credits
 

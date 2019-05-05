@@ -1,6 +1,6 @@
 # GitHub Compare
 
-Aplicação desenvolvida com **React.js**, utilizando styles-components, prop-types, MomentJS e outras features.
+Aplicação desenvolvida com **React.js**, utilizando styled-components, prop-types, MomentJS e outras features.
 
 ## Stack
 

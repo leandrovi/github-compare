@@ -4,17 +4,15 @@ Aplicação desenvolvida com **React.js**, utilizando styled-components, prop-ty
 
 ## Stack
 
-(Em construção)
-
-- [React.js]()
+- [React.js](https://reactjs.org/)
+- [Axios](https://github.com/axios/axios)
 
 ## Tools
 
-(Em construção)
-
-- [Styled-components]()
-- [Styled Components VS Code Extension]()
+- [Styled-components](https://www.styled-components.com/)
+- [Styled Components VS Code Extension](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+- [Moment.js](https://momentjs.com/)
 
 ## Credits
 
-Aplicação desenvolvida em um projeto do bootcamp GoStack da [Rocketseat](https://github.com/rocketseat).
+Aplicação desenvolvida em projeto do bootcamp GoStack da [Rocketseat](https://github.com/rocketseat).

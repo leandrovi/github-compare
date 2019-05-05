@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
+import moment from 'moment';
+import api from '../../services/api';
 
 import logo from '../../assets/logo.png';
 
@@ -6,17 +8,50 @@ import { Container, Form } from './styles';
 
 import CompareList from '../../components/CompareList';
 
-const Main = () => (
-  <Container>
-    <img src={logo} alt="GitHub Compare" />
+export default class Main extends Component {
+  state = {
+    repositoryInput: '',
+    repositories: [],
+  };
 
-    <Form>
-      <input type="text" placeholder="usuário/repositório" />
-      <button type="submit">OK</button>
-    </Form>
+  handleAddRespository = async (e) => {
+    const { repositoryInput, repositories } = this.state;
 
-    <CompareList />
-  </Container>
-);
+    e.preventDefault();
 
-export default Main;
+    try {
+      const { data: repository } = await api.get(`/repos/${repositoryInput}`);
+
+      // Crio nova propriedade chamada lastCommit e envio pro componente
+      repository.lastCommit = moment(repository.pushed_at).fromNow();
+
+      this.setState({
+        repositoryInput: '',
+        repositories: [...repositories, repository],
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  render() {
+    const { repositoryInput, repositories } = this.state;
+    return (
+      <Container>
+        <img src={logo} alt="GitHub Compare" />
+
+        <Form onSubmit={this.handleAddRespository}>
+          <input
+            type="text"
+            placeholder="usuário/repositório"
+            value={repositoryInput}
+            onChange={e => this.setState({ repositoryInput: e.target.value })}
+          />
+          <button type="submit">OK</button>
+        </Form>
+
+        <CompareList repositories={repositories} />
+      </Container>
+    );
+  }
+}

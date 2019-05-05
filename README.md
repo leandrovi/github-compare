@@ -12,6 +12,7 @@ Aplicação desenvolvida com **React.js**, utilizando styled-components, prop-ty
 - [Styled-components](https://www.styled-components.com/)
 - [Styled Components VS Code Extension](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 - [Moment.js](https://momentjs.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 ## Credits
 

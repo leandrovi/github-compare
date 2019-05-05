@@ -58,3 +58,43 @@ export const Repository = styled.div`
     }
   }
 `;
+
+export const ButtonArea = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
+export const Remove = styled.button`
+  background: #ee0511;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 12px 5px 12px 10px;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+
+  &:hover {
+    background: #ff1519;
+    cursor: pointer;
+  }
+`;
+
+export const Update = styled.button`
+  background: #339900;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 12px 10px 12px 5px;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+
+  &:hover {
+    background: #33a519;
+    cursor: pointer;
+  }
+`;

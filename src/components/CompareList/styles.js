@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   max-width: 90%;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   margin-top: 40px;
 `;
 
